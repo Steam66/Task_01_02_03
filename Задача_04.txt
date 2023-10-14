@@ -1,0 +1,46 @@
+public class Web_site
+{
+    private string _name;
+    private string _adress;
+    private string _description;
+    private string _ip_adress;
+    
+    public string Name
+        {
+            get { return _name; }
+            set { _name = value; }
+        }
+    public string Adress
+        {
+            get { return _adress; }
+            set { _adress = value; }
+        }
+    public string Description
+        {
+            get { return _description; }
+            set { _description = value; }
+        }
+    public string Ip_adress
+        {
+            get { return _ip_adress; }
+            set { _ip_adress = value; }
+        }
+}
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        Web_site a= new();
+        a.Name = "Роутер";
+        a.Adress = "ftp://192.168.0.0.1";
+        a.Description = "Router settings";
+        a.Ip_adress = "192.168.0.0.1";
+        
+        Console.WriteLine ("Название сайта: "+a.Name);
+        Console.WriteLine ("Адрес сайта: "+a.Adress);
+        Console.WriteLine("Описание: "+a.Description);
+        Console.WriteLine("Ip адрес: "+a.Ip_adress);
+       
+    }
+}
